@@ -11,7 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -24,7 +25,14 @@
               >+38 (096) 309 21 45</a
             >
             <a href="#" class="header__email">layout585@gmail.com</a>
-            <a href="#" class="header__btn">Бесплатная консультация</a>
+            <a
+              data-fancybox
+              data-src="#modal"
+              href="javascript:;"
+              href="#"
+              class="header__btn"
+              >Бесплатная консультация</a
+            >
           </div>
         </div>
       </div>
@@ -49,5 +57,45 @@
         </div>
       </div>
     </header>
+
+    <section class="slider">
+      <div class="container">
+        <div class="slider__inner">
+          <div class="slider__item">
+            <div class="slider__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</div>
+            <div class="slider__text">
+              Полное прекращение существования юридического лица с сохранением
+              легальности всей предыдущей деятельности.
+            </div>
+            <div class="slider__btn">Оставить заявку</div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</div>
+            <div class="slider__text">
+              Полное прекращение существования юридического лица с сохранением
+              легальности всей предыдущей деятельности.
+            </div>
+            <div class="slider__btn">Оставить заявку</div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</div>
+            <div class="slider__text">
+              Полное прекращение существования юридического лица с сохранением
+              легальности всей предыдущей деятельности.
+            </div>
+            <div class="slider__btn">Оставить заявку</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal">
+      <h2>Hello!</h2>
+      <p>You are awesome!</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
