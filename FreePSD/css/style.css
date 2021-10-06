@@ -181,5 +181,52 @@ header {
     right: -12px;
     top: 50%;
     transform: translateY(-50%);
+    outline: none;
 }
 
+.slider__inner {
+    position: relative;
+}
+
+.slick-btn {
+    top: 70%;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    position: absolute;
+    background-color: #ffc222;
+    cursor: pointer;
+    outline: none;
+}
+
+.slick-btn.slick-disabled {
+    cursor: default;
+    background-color: transparent;
+}
+
+.slick-btn:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.slick-next:before {
+    content: "\f105";
+    font-family: 'icomoon' !important;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev:before {
+    content: "\f104";
+    font-family: 'icomoon' !important;
+}
+
+.slick-prev {
+    left: 0;
+}
